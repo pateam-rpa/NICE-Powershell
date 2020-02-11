@@ -14,7 +14,7 @@ Write-Host "Select Downloaded Settings File... (see FileOpen Dialog)" -Foregroun
     if($foldername.ShowDialog() -eq "OK")
     {
         $folder = $foldername.SelectedPath
-        Get-Childitem $folder | Unblock-File
+        Get-Childitem -recurse $folder | Unblock-File
         Write-Host "Completed unblocking files in: " $folder -ForegroundColor Green  
     }
 
