@@ -18,3 +18,6 @@ Write-Host "Select Downloaded Settings File... (see FileOpen Dialog)" -Foregroun
         Write-Host "Completed unblocking files in: " $folder -ForegroundColor Green  
     }
 
+
+
+## remove spaces from path RTServer.exe
