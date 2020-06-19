@@ -12,6 +12,8 @@ And Saturday from 9:00-17:00, running every 10 minutes.
 or
 * Schedule a task to run once every 4 hours, except between 22:00-02:00
 
+If you want, there is a example xml that can be imported into the windows task scheduler. 
+
 In addition, this script will check if there currently is an identical task in the Queue(Elastic Search) already or beeing processed by a bot.
 If that is the case, the powershell will not invoke another one, preventing two robots working on the same, e.g. reading emails or getting records from a DB.
 
